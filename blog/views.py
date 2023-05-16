@@ -7,7 +7,7 @@ from github_pulls.settings import env
 
 def get_pulls(request):
     if request.method == 'POST':
-        # Получаем имя пользователя, название репозитория и количество дней из формы
+        # Get username, repository name and number of days from form
         username = request.POST['username']
         repository = request.POST['repository']
         days = int(request.POST['days'])
